@@ -1,0 +1,19 @@
+
+services:
+  speech-to-text:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: whisper_speech_to_text:v1
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/root/.cache/whisper
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  

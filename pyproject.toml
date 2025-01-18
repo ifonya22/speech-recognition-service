@@ -1,0 +1,16 @@
+[project]
+name = "audio-req-service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "fastapi>=0.115.6",
+    "openai-whisper>=20240930",
+    "pydub>=0.25.1",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.34.0",
+    "websockets>=14.1",
+]
+
