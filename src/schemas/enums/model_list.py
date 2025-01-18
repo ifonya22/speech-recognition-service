@@ -12,9 +12,9 @@ class ModelList(Enum):
     def get_models_required_vram():
         return {
             ModelList.TINY: "1 GB",
-            "base": "1 GB",
-            "small": "2 GB",
-            "medium": "5 GB",
-            "large": "10 GB",
-            "turbo": "6 GB",
+            ModelList.BASE: "1 GB",
+            ModelList.SMALL: "2 GB",
+            ModelList.MEDIUM: "5 GB",
+            ModelList.LARGE: "10 GB",
+            ModelList.TURBO: "6 GB",
         }
